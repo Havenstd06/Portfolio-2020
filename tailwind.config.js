@@ -7,6 +7,9 @@ module.exports = {
         firacode: ["Fira Code"],
         raleway: ["Raleway"],
       },
+    maxWidth: {
+     '0.5xl': '39rem',
+    }
     },
   },
   variants: {},

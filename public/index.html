@@ -42,72 +42,66 @@
 
 </head>
 
-<body>
-  <div class="relative area">
-    <div class="flex items-center h-screen">
+<body class="bg-beau">
+  <div class="relative">
+    <div class="items-center h-screen py-5 md:flex">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl mx-auto">
-          <div
-            class="relative z-50 overflow-hidden transition-all duration-700 ease-out transform rounded-lg shadow-md shadow-lg bg-gray-50 hover:w-full hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
-            <div class="px-4 py-5 sm:p-8">
+          <div class="relative z-50 mb-4 overflow-hidden transition-all duration-500 ease-out rounded-lg shadow-md shadow-lg md:mb-0 md:transform bg-gray-50 hover:w-full hover:-translate-y-1 hover:scale-105 hover:shadow-lg">
+            <div class="px-3 pt-10 pb-5 md:px-5">
               <div class="grid grid-cols-1 gap-4 md:grid-cols-2 ">
                 <div class="flex items-center justify-center">
-                  <img src="/img/photo_profil_1.png"
-                    class="w-64 transition duration-500 ease-in-out rounded-full shadow-md hover:shadow-xl"
-                    alt="Thomas Drumont">
+                  <img src="img/photo_profil_1.png" class="w-64 transition duration-500 ease-in-out rounded-full shadow-lg hover:shadow-2xl" alt="Thomas Drumont">
                 </div>
-                <div
-                  class="flex items-center justify-center my-4 border-t border-gray-600 md:my-0 md:border-t-0 md:border-l-2">
+                <div class="items-center justify-center my-4 border-t border-gray-600 lg:flex md:my-0 md:border-t-0 md:border-l-2">
                   <div class="mt-4 text-center md:mt-0">
-                    <div class="items-center justify-center lg:flex" x-data="{ hover: false }"
-                      @mouseenter="hover = true" <blade mouseleave|%3D%26%2334%3Bhover%20%3D%20false%26%2334%3B%3E%0D>
-                      <div class="hidden lg:block">
+                    <div class="items-center justify-center lg:flex" x-data="{ hover: false }">
+                      <div class="hidden lg:block" @mouseenter="hover = true" @mouseleave="hover = false">
                         <i :class="{ 'fas': hover === true }" class="mr-2 text-3xl text-pink-500 far fa-heart"></i>
                       </div>
                       <h1 class="text-3xl font-medium text-gray-900 font-raleway">Thomas Drumont</h1>
-                      <span
-                        class="ml-2 mt-1 inline-flex items-center px-3 py-1 md:py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800 my-2 lg:my-0">
+                      <span class="ml-2 mt-1 inline-flex items-center px-3 py-1 md:py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800 my-2 lg:my-0">
                         <span id="age"></span>&nbsp;ans
                       </span>
                     </div>
-                    <p class="text-lg text-gray-900 font-firacode">Développeur Front et Back-end</p>
+                    <p class="text-gray-900 lg:text-lg font-firacode">Développeur Front et Back-end</p>
                     <p class="text-sm text-gray-900 font-firacode">
                       Lover of <a class="hover:text-gray-600" href="https://laravel.com" target="_nofollow">Laravel</a>
                       & <a class="hover:text-gray-600" href="https://tailwindcss.com" target="_nofollow">Tailwind</a>
                     </p>
                     <div class="px-4 pt-4">
-                      <a href="https://discord.com/" target="_nofollow"
-                        class="inline-flex items-center px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-indigo-600 text-white">
-                        <i class="mr-1 fab fa-discord "></i> Havens#4163
+                      <a href="https://discord.com/" target="_nofollow" class="inline-flex items-center px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-indigo-600 hover:bg-indigo-700 text-white transition ease-in-out duration-300">
+                        <i class="mr-1 fab fa-discord "></i>Havens#4163
                       </a>
-                      <a href="https://github.com/Havenstd06" target="_nofollow"
-                        class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-gray-600 text-white">
-                        <i class="mr-1 fab fa-github"></i> Havenstd06
+                      <a href="https://github.com/Havenstd06" target="_nofollow" class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-gray-600 hover:bg-gray-700 text-white transition ease-in-out duration-300">
+                        <i class="mr-1 fab fa-github"></i>Havenstd06
                       </a>
-                      <a href="https://www.instagram.com/thomas.drmt/" target="_nofollow"
-                        class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-pink-500 text-white lg:mt-0 mt-2">
-                        <i class="mr-1 fab fa-instagram"></i> thomas.drmt
+                      <a href="https://www.instagram.com/thomas.drmt/" target="_nofollow" class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-pink-500 hover:bg-pink-600 text-white lg:mt-0 mt-2 transition ease-in-out duration-300">
+                        <i class="mr-1 fab fa-instagram"></i>thomas.drmt
                       </a>
                     </div>
                     <div class="md:px-4 md:pt-2">
-                      <a href="https://twitter.com/HavensYT" target="_nofollow"
-                        class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-blue-500 text-white mt-2 md:mt-0">
-                        <i class="mr-1 fab fa-twitter"></i> HavensYT
+                      <a href="https://twitter.com/HavensYT" target="_nofollow" class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-blue-500 hover:bg-blue-600 text-white mt-2 md:mt-0 transition ease-in-out duration-300">
+                        <i class="mr-1 fab fa-twitter"></i>HavensYT
                       </a>
-                      <a href="mailto:thomas@drumont.dev" target="_nofollow"
-                        class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-green-500 text-white mt-2 md:mt-0">
-                        <i class="mr-1 far fa-envelope"></i> thomas@drumont.dev
+                      <a href="mailto:thomas@drumont.dev" target="_nofollow" class="inline-flex items-center ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-green-500 hover:bg-green-600 text-white mt-2 lg:mt-0 transition ease-in-out duration-300">
+                        <i class="mr-1 far fa-envelope"></i>thomas@drumont.dev
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="px-4 py-4 sm:px-6">
-              <div class="flex items-center justify-center">
-                <button type="button"
-                  class="inline-flex items-center px-6 py-3 text-lg font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200">
-                  Langage
+            <div class="px-4 pt-5 pb-8 sm:px-6">
+              <div class="md:flex md:justify-between mx-auto max-w-0.5xl content-center">
+                <button type="button" class="items-center min-w-full px-6 py-3 text-lg font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md md:min-w-0 md:inline-flex hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200">
+                  <i class="mr-2 fas fa-code"></i>Compétences
+                </button>
+                <button type="button" class="items-center min-w-full px-6 py-3 mt-4 text-lg font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md md:min-w-0 md:inline-flex md:mt-0 hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200">
+                  <i class="mr-2 fas fa-graduation-cap"></i>Formations
+                </button>
+                <button type="button" class="items-center min-w-full px-6 py-3 mt-4 text-lg font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md md:min-w-0 md:inline-flex md:mt-0 hover:bg-indigo-50 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-indigo-200">
+                  <i class="mr-2 fas fa-laptop-code"></i>Projets
                 </button>
               </div>
             </div>
