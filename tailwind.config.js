@@ -1,8 +1,14 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter var"],
+        firacode: ["Fira Code"],
+        raleway: ["Raleway"],
+      },
+    },
   },
   variants: {},
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/ui")],
+};

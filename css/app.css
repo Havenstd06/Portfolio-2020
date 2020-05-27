@@ -1,5 +1,12 @@
-@tailwind base;
+/* Tailwind */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@tailwind components;
+/* Fonts */
+@import 'https://rsms.me/inter/inter.css';
+@import 'https://cdn.jsdelivr.net/npm/firacode@2.0.0/distr/fira_code.min.css';
+@import 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap.css';
 
-@tailwind utilities;
+/* Custom */
+@import './custom.css';
