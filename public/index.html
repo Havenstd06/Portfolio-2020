@@ -55,7 +55,7 @@
     <section id="principal" class="items-center h-screen py-5 md:flex" x-show="section === 'principal'" x-description="Panel Principal" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-          <div class="relative z-50 mb-4 overflow-hidden transition-all ease-in-out bg-white rounded-lg shadow-md shadow-lg duration-600 md:mb-0 md:transform hover:w-full hover:-translate-y-1 hover:scale-102 hover:shadow-lg">
+          <div class="relative z-50 mb-4 overflow-hidden transition-all ease-in-out bg-white rounded-lg shadow-lg duration-600 md:mb-0 md:transform hover:w-full hover:-translate-y-1 hover:scale-102 hover:shadow-lg">
             <div class="px-3 pt-10 pb-5 md:px-5">
               <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div class="flex items-center justify-center">
@@ -67,16 +67,12 @@
                       <div @mouseenter="hover = true" @mouseleave="hover = false">
                         <i :class="{ 'fas': hover === true }" class="mr-2 text-xl text-gray-700 lg:text-3xl far fa-terminal"></i>
                       </div>
-                      <h1 class="text-xl font-medium text-gray-800 lg:text-3xl font-raleway">Thomas Drumont</h1>
+                      <h1 class="text-xl font-medium text-gray-800 lg:text-3xl font-raleway">Thomas</h1>
                       <span class="ml-2 inline-flex items-center px-3 py-1 md:py-0.5 rounded-full text-sm font-medium leading-5 bg-indigo-100 text-indigo-800 my-2 lg:my-0">
                         <span id="age"></span>&nbsp;ans
                       </span>
                     </div>
                     <p class="text-gray-900 lg:text-lg font-firacode">Développeur Front et Back-end</p>
-                    <p class="text-sm text-gray-900 font-firacode">
-                      Lover of <a class="hover:text-gray-600" href="https://laravel.com" target="_nofollow">Laravel</a>
-                      & <a class="hover:text-gray-600" href="https://tailwindcss.com" target="_nofollow">Tailwind</a>
-                    </p>
                     <div class="pt-4 px-13 lg:px-0">
                       <a href="https://discord.com/" target="_nofollow" class="justify-center lg:justify-start inline-flex min-w-full lg:min-w-0 items-center px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-indigo-600 hover:bg-indigo-700 text-white transition ease-in-out duration-300">
                         <i class="mr-1 fab fa-discord "></i>Havens#4163
@@ -84,14 +80,8 @@
                       <a href="https://github.com/Havenstd06" target="_nofollow" class="justify-center lg:justify-start inline-flex min-w-full lg:min-w-0 items-center lg:ml-1 px-2.5 py-1 mt-2 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-gray-600 hover:bg-gray-700 text-white transition ease-in-out duration-300">
                         <i class="mr-1 fab fa-github"></i>Havenstd06
                       </a>
-                      <a href="https://www.instagram.com/thomas.drmt/" target="_nofollow" class="justify-center lg:justify-start inline-flex min-w-full lg:min-w-0 items-center lg:ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-pink-500 hover:bg-pink-600 text-white lg:mt-0 mt-2 transition ease-in-out duration-300">
-                        <i class="mr-1 fab fa-instagram"></i>thomas.drmt
-                      </a>
                     </div>
                     <div class="px-13 lg:px-4 lg:pt-2">
-                      <a href="https://twitter.com/HavensYT" target="_nofollow" class="justify-center lg:justify-start inline-flex min-w-full lg:min-w-0 items-center lg:ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-blue-500 hover:bg-blue-600 text-white mt-2 lg:mt-0 transition ease-in-out duration-300">
-                        <i class="mr-1 fab fa-twitter"></i>HavensYT
-                      </a>
                       <a href="mailto:thomas@drumont.dev" target="_nofollow" class="justify-center lg:justify-start inline-flex min-w-full lg:min-w-0 items-center lg:ml-1 px-2.5 py-1 md:py-0.5 rounded-md text-sm font-medium leading-5 bg-green-500 hover:bg-green-600 text-white mt-2 lg:mt-0 transition ease-in-out duration-300 truncate">
                         <i class="mr-1 far fa-envelope"></i>thomas@drumont.dev
                       </a>
@@ -136,13 +126,13 @@
     <section id="propos" class="items-center h-screen py-5 sm:flex" x-show="section === 'propos'" x-description="Panel à propos" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
       <div class="w-full px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-          <div class="relative z-50 mb-4 overflow-hidden transition-all ease-in-out bg-white rounded-lg shadow-md shadow-lg duration-600 md:mb-0 md:transform hover:w-full hover:-translate-y-1 hover:scale-102 hover:shadow-lg">
+          <div class="relative z-50 mb-4 overflow-hidden transition-all ease-in-out bg-white rounded-lg shadow-lg duration-600 md:mb-0 md:transform hover:w-full hover:-translate-y-1 hover:scale-102 hover:shadow-lg">
             <div class="px-3 pt-10 pb-5 md:px-5">
               <h1 class="text-4xl font-medium tracking-wider text-center text-gray-800 font-raleway">À propos de moi</h1>
               <blockquote class="mt-8">
                 <div class="max-w-3xl mx-auto text-xl font-medium leading-8 text-gray-900 font-raleway">
                   <p>
-                    Je m'appelle Thomas Drumont, j'ai 19 ans, j'ai obtenu en 2019 le titre de technicien via mon Bac Pro
+                    Je m'appelle Thomas, j'ai 19 ans, j'ai obtenu en 2019 le titre de technicien via mon Bac Pro
                     Systèmes Numériques durant cette formation j'ai effectué de <span @click="section = 'formations'"
                     class="font-semibold cursor-pointer">nombreux stages en entreprise </span>.
                   </p>
@@ -442,6 +432,9 @@
                     <button @click="projet = 'limg'" class="w-full px-1 py-4 font-medium leading-5 text-center text-gray-500 border-b-2 border-transparent md:w-full hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300" :class="{ 'text-indigo-600 border-indigo-500 focus:text-indigo-800 focus:border-indigo-700': projet === 'limg' }">
                       Limg
                     </button>
+                    <button @click="projet = 'slash'" class="w-full px-1 py-4 font-medium leading-5 text-center text-gray-500 border-b-2 border-transparent md:w-full hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300" :class="{ 'text-indigo-600 border-indigo-500 focus:text-indigo-800 focus:border-indigo-700': projet === 'slash' }">
+                      Slash
+                    </button>
                     <button @click="projet = 'larashop'" class="w-full px-1 py-4 font-medium leading-5 text-center text-gray-500 border-b-2 border-transparent md:w-full hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300" :class="{ 'text-indigo-600 border-indigo-500 focus:text-indigo-800 focus:border-indigo-700': projet === 'larashop' }">
                       Larashop
                     </button>
@@ -511,6 +504,62 @@
                                   <i class="absolute fa-tools fa-lg" :class="{ 'fas': hover === true, 'fad': hover === false }"></i>
                                 </div>
                                 <p class="pl-1 text-sm font-medium">Customisation (visibilité, taille personnalisée), panel admin</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div x-show="projet === 'slash'">
+                    <div class="grid grid-cols-1 gap-4 mx-4 md:grid-cols-2">
+                      <div class="flex items-center">
+                        <div class="flex flex-col items-center w-full mx-auto my-8">
+                          <div style="background-image: url(https://limg.app/i/935qby.png)" class="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md"></div>
+                          <div class="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64">
+                            <h2 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">Slash</h2>
+                            <div class="px-3 py-2 text-center bg-gray-100 md:text-left md:flex">
+                              <h1 class="flex-1 font-bold text-gray-800 font-raleway">2020</h1>
+                              <div class="flex justify-center md:justify-end">
+                                <a href="https://github.com/Havenstd06/Slash" target="_nofollow"
+                                  class="px-2 py-1 text-xs font-semibold text-white uppercase transition duration-150 ease-in-out bg-gray-500 rounded hover:bg-gray-700">
+                                  Github
+                                </a>
+                                <a href="https://slash.hvs.cx" target="_nofollow"
+                                  class="px-2 py-1 ml-2 text-xs font-semibold text-white uppercase transition duration-150 ease-in-out bg-indigo-500 rounded hover:bg-indigo-700">
+                                  Visiter
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col max-w-sm px-4 py-2 mx-auto my-2 rounded-lg shadow-md md:px-8 bg-gray-50">
+                        <div class="flex items-center justify-center">
+                          <h2 class="text-3xl font-bold text-gray-800">
+                            <span class="text-indigo-600">Slash</span>
+                          </h2>
+                        </div>
+                        <div class="mt-4">
+                          <p class="text-lg font-medium text-gray-700">
+                            Slash est un service de réduction d'URL <a href="https://github.com/Havenstd06/Slash" target="_nofollow" class="font-bold">open source</a> sous le framework PHP <a href="https://laravel.com" target="_nofollow" class="font-bold">Laravel</a>.
+                          </p>
+                          <ul class="flex flex-col pt-4">
+                            <li class="flex flex-row mb-2 border-gray-200">
+                              <div class="flex items-center flex-1 p-4 transition duration-500 ease-in-out transform bg-gray-100 rounded-md select-none hover:-translate-y-1 hover:shadow-lg" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                                <div class="flex flex-col items-center justify-center w-10 h-10 px-4 mr-4 text-indigo-700 bg-indigo-100 rounded-md hover:bg-indigo-50">
+                                  <i class="absolute fa-link fa-lg" :class="{ 'fas': hover === true, 'fad': hover === false }"></i>
+                                </div>
+                                <p class="pl-1 text-sm font-medium">Redirige avec un lien plus petit</p>
+                              </div>
+                            </li>
+                            <li class="flex flex-row mb-2 border-gray-200">
+                              <div class="flex items-center flex-1 p-4 transition duration-500 ease-in-out transform bg-gray-100 rounded-md select-none hover:-translate-y-1 hover:shadow-lg" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                                <div class="flex flex-col items-center justify-center w-10 h-10 px-4 mr-4 text-indigo-700 bg-indigo-100 rounded-md hover:bg-indigo-50">
+                                  <i class="absolute fa-tachometer-fastest fa-lg"
+                                    :class="{ 'fas': hover === true, 'fad': hover === false }"></i>
+                                </div>
+                                <p class="pl-1 text-sm font-medium">Rapide et facile d'utilisation</p>
                               </div>
                             </li>
                           </ul>
